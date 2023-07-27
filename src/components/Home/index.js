@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png';
 import './index.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
+//import Logo from './Logo';
 const Home= ()=>{
     const [letterClass, setLetterClass]=useState('text-animate');
     const nameArray=['o','h','i','t'];
