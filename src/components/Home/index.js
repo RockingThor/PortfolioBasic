@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png';
 import './index.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
+import Loader from 'react-loaders';
 //import Logo from './Logo';
 const Home= ()=>{
     const [letterClass, setLetterClass]=useState('text-animate');
@@ -14,6 +15,7 @@ const Home= ()=>{
         }, 5000);
     },[]);
     return(
+        <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -35,6 +37,8 @@ const Home= ()=>{
                 <Link to='/contact' className='flat-button'>CONTACT ME</Link>
             </div>
         </div>
+        <Loader type='pacman'/>
+        </>
     )
 }
 
